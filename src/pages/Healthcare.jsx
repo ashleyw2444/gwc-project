@@ -1,22 +1,9 @@
+import Sidebar from '../components/Sidebar';
+
 export default function Healthcare() {
   return (
     <div className="flex h-screen font-inter bg-[#f6f8ff]">
-      {/* Sidebar */}
-      <aside className="w-60 bg-white p-6 flex flex-col justify-between border-r">
-        <img src="/assets/clearlogo.png" alt="Clear logo" className="w-28 mb-10" />
-        <ul className="space-y-4 text-gray-800 font-medium">
-          <li className="text-purple-600 font-bold">Dashboard</li>
-          <li>Activity</li>
-          <li>Profile</li>
-          <li>Security</li>
-          <li>Schedules</li>
-          <li>Payouts</li>
-          <li>Settings</li>
-        </ul>
-        <button className="mt-10 bg-gradient-to-r from-purple-700 to-indigo-600 text-white font-bold py-2 px-4 rounded-xl">
-          Logout
-        </button>
-      </aside>
+      <Sidebar />
 
       {/* Main Content */}
       <main className="flex-1 p-10 flex gap-6">

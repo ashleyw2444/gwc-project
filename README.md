@@ -1,3 +1,6 @@
-# My React App
+# GWC x CLEAR Project
 
-A minimal React setup using Vite.
+Instructions for running
+1. npm install
+2. npm install @fontsource/inter
+3. npm run dev
