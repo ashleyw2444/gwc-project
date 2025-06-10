@@ -1,6 +1,13 @@
 import Sidebar from '../components/Sidebar';
+import TrackerPanel from "../components/TrackerPanel";
 
 export default function Healthcare() {
+  const healthcareItems = [
+    { label: "🏥 Hospital 1", date: "22 September 2020" },
+    { label: "👨‍⚕️ Doctor 1", date: "18 September 2020" },
+    { label: "💉 Vaccination Clinic 1", date: "22 September 2020" },
+  ];
+
   return (
     <div className="flex h-screen font-inter bg-[#f6f8ff]">
       <Sidebar />
@@ -66,27 +73,7 @@ export default function Healthcare() {
           </div>
         </div>
 
-        {/* Tracker Panel */}
-        <div className="w-64 bg-white p-6 rounded-xl shadow">
-          <div className="flex justify-between items-center mb-4">
-            <h2 className="text-lg font-semibold">Your Tracker</h2>
-            <button className="text-sm text-indigo-600 hover:underline">View all →</button>
-          </div>
-          <ul className="space-y-4 text-sm">
-            <li>
-              <span className="block font-medium text-indigo-600">🏥 Hospital 1</span>
-              <span className="text-gray-500">22 September 2020</span>
-            </li>
-            <li>
-              <span className="block font-medium text-indigo-600">👨‍⚕️ Doctor 1</span>
-              <span className="text-gray-500">18 September 2020</span>
-            </li>
-            <li>
-              <span className="block font-medium text-indigo-600">💉 Vaccination Clinic 1</span>
-              <span className="text-gray-500">22 September 2020</span>
-            </li>
-          </ul>
-        </div>
+        <TrackerPanel title="Your Tracker" viewAllLink="#" items={healthcareItems} />
       </main>
     </div>
   );

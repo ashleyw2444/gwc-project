@@ -1,8 +1,16 @@
 import { useNavigate } from 'react-router-dom';
 import Sidebar from '../components/Sidebar';
+import TrackerPanel from "../components/TrackerPanel";
+import { Link } from "react-router-dom";
 
 export default function Financial() {
   const navigate = useNavigate();
+
+  const financialItems = [
+    { label: "🔍 Bank 1", date: "22 September 2020" },
+    { label: "🔍 Bank 2", date: "18 September 2020" },
+    { label: "🔍 ATM 1", date: "22 September 2020" },
+  ];
 
   return (
     <div className="flex h-screen font-inter bg-[#f6f8ff]">
@@ -28,9 +36,12 @@ export default function Financial() {
                   <span className="text-green-600 font-medium">Verified</span>
                 </li>
               </ul>
-              <button className="mt-4 text-sm text-indigo-600 font-medium hover:underline">
+              <Link
+                to="/activity"
+                className="mt-4 inline-block text-sm text-indigo-600 font-medium hover:underline"
+              >
                 View all →
-              </button>
+              </Link>
             </div>
 
             {/* Investments */}
@@ -46,9 +57,12 @@ export default function Financial() {
                   <span className="text-green-600 font-medium">Verified</span>
                 </li>
               </ul>
-              <button className="mt-4 text-sm text-indigo-600 font-medium hover:underline">
+              <Link
+                to="/activity"
+                className="mt-4 inline-block text-sm text-indigo-600 font-medium hover:underline"
+              >
                 View all →
-              </button>
+              </Link>
             </div>
 
             {/* Loans */}
@@ -58,9 +72,12 @@ export default function Financial() {
                 <li>🏡 Chase - Mortgage</li>
                 <li>🎓 SoFi - Student Loan</li>
               </ul>
-              <button className="mt-4 text-sm text-indigo-600 font-medium hover:underline">
+              <Link
+                to="/activity"
+                className="mt-4 inline-block text-sm text-indigo-600 font-medium hover:underline"
+              >
                 View all →
-              </button>
+              </Link>
             </div>
 
             {/* Link Account */}
@@ -72,27 +89,7 @@ export default function Financial() {
           </div>
         </div>
 
-        {/* Tracker Panel */}
-        <div className="w-64 bg-white p-6 rounded-xl shadow">
-          <div className="flex justify-between items-center mb-4">
-            <h2 className="text-lg font-semibold">Your Tracker</h2>
-            <button className="text-sm text-indigo-600 hover:underline">View all →</button>
-          </div>
-          <ul className="space-y-4 text-sm">
-            <li>
-              <span className="block font-medium text-indigo-600">🔍 Bank 1</span>
-              <span className="text-gray-500">22 September 2020</span>
-            </li>
-            <li>
-              <span className="block font-medium text-indigo-600">🔍 Bank 2</span>
-              <span className="text-gray-500">18 September 2020</span>
-            </li>
-            <li>
-              <span className="block font-medium text-indigo-600">🔍 ATM 1</span>
-              <span className="text-gray-500">22 September 2020</span>
-            </li>
-          </ul>
-        </div>
+        <TrackerPanel title="Your Tracker" viewAllLink="#" items={financialItems} />
       </main>
     </div>
   );

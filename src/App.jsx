@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Dashboard from './pages/Dashboard';
 import Healthcare from './pages/Healthcare';
 import Finance from './pages/Finance';
+import Activity from './pages/Activity';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Route path="/" element={<Dashboard />} />
           <Route path="/healthcare" element={<Healthcare />} />  
           <Route path="/finance" element={<Finance />} /> 
+          <Route path="/activity" element={<Activity />} /> 
         </Routes>
       </div>
     </Router>

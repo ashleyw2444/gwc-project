@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Sidebar() {
   const navItems = [
     { label: "Dashboard", icon: "dashboardIcon.png", path: "/" },
-    { label: "Activity", icon: "activityIcon.png", path: "/" },
+    { label: "Activity", icon: "activityIcon.png", path: "/Activity" },
     { label: "Profile", icon: "profileIcon.png", path: "/" },
     { label: "Security", icon: "securityIcon.png", path: "/" },
     { label: "Schedules", icon: "schedulesIcon.png", path: "/" },
