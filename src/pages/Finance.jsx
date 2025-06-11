@@ -123,7 +123,7 @@ export default function Financial() {
             {/* Link Account */}
             <div
               className="bg-gradient-to-r from-purple-600 to-indigo-500 p-6 rounded-xl flex flex-col justify-center items-center text-white cursor-pointer"
-              onClick={() => navigate('/financial-info')}
+              onClick={() => navigate('/financial-release')}
             >
               <h2 className="text-xl font-semibold mb-2">Link Account</h2>
               <p className="text-sm">Connect to other financial institutions</p>

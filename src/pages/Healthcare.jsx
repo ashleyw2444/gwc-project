@@ -1,7 +1,10 @@
+import { useNavigate } from 'react-router-dom'; // ← Add this!
 import Sidebar from '../components/Sidebar';
 import TrackerPanel from "../components/TrackerPanel";
 
 export default function Healthcare() {
+  const navigate = useNavigate(); // ← Initialize the hook
+
   const healthcareItems = [
     { label: "🏥 Hospital 1", date: "22 September 2020" },
     { label: "👨‍⚕️ Doctor 1", date: "18 September 2020" },
@@ -29,10 +32,16 @@ export default function Healthcare() {
               </div>
             </div>
             <div className="space-x-4">
-              <button className="border border-purple-600 text-purple-600 px-4 py-2 rounded-md text-sm font-medium">
+              <button
+                onClick={() => navigate('/medical-release')}
+                className="border border-purple-600 text-purple-600 px-4 py-2 rounded-md text-sm font-medium"
+              >
                 Reverify Identity
               </button>
-              <button className="border border-purple-600 text-purple-600 px-4 py-2 rounded-md text-sm font-medium">
+              <button
+                onClick={() => navigate('/medical-release')}
+                className="border border-purple-600 text-purple-600 px-4 py-2 rounded-md text-sm font-medium"
+              >
                 Manage Consent
               </button>
             </div>
@@ -62,7 +71,12 @@ export default function Healthcare() {
           <div className="bg-white p-6 rounded-xl shadow">
             <div className="flex justify-between items-center mb-4">
               <h2 className="text-lg font-semibold text-gray-900">Consent Management</h2>
-              <button className="text-sm text-indigo-600 font-medium hover:underline">Edit Preferences →</button>
+              <button
+                onClick={() => navigate('/medical-release')}
+                className="text-sm text-indigo-600 font-medium hover:underline"
+              >
+                Edit Preferences →
+              </button>
             </div>
             <div className="grid grid-cols-2 gap-4 text-sm text-gray-800">
               <p>✅ Share Medical Record<br /><span className="text-gray-500">NYC Medical Center</span></p>
