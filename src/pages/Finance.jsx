@@ -7,82 +7,124 @@ export default function Financial() {
   const navigate = useNavigate();
 
   const financialItems = [
-    { label: "🔍 Bank 1", date: "22 September 2020" },
-    { label: "🔍 Bank 2", date: "18 September 2020" },
-    { label: "🔍 ATM 1", date: "22 September 2020" },
+    { label: "🏦 Chase", date: "22 May 2025" },
+    { label: "🐦 Robinhood", date: "26 May 2025" },
+    { label: "🏦 Bank of America", date: "10 June 2025" },
   ];
 
   return (
     <div className="flex h-screen font-inter bg-[#f6f8ff]">
-      
       <Sidebar />
 
-      {/* Main Content */}
       <main className="flex-1 p-10 flex gap-6">
         <div className="flex-1 space-y-6">
           <h1 className="text-3xl font-bold text-gray-900">Financial</h1>
 
-          {/* Bank Accounts */}
-          <div className="grid grid-cols-2 gap-4">
-            <div className="bg-white p-6 rounded-xl shadow">
-              <h2 className="text-xl font-semibold mb-4">Bank Accounts</h2>
-              <ul className="space-y-2 text-sm">
-                <li className="flex justify-between">
-                  <span>🏦 Chase - Saving Account</span>
-                  <span className="text-green-600 font-medium">Verified</span>
+          <div className="grid grid-cols-2 gap-4 items-start">
+            {/* Bank Accounts */}
+            <div className="bg-white p-6 rounded-xl shadow h-full flex flex-col">
+              <h2 className="text-xl font-semibold mb-4 text-gray-900">Bank Accounts</h2>
+              <ul className="space-y-6 flex-grow">
+                <li className="flex justify-between items-center">
+                  <div className="flex items-center gap-3">
+                    <img src="/images/chase-logo.png" alt="Chase Logo" className="w-10 h-10 rounded-full" />
+                    <div>
+                      <p className="text-base font-bold text-gray-900">Chase</p>
+                      <p className="text-xs text-gray-500">Saving Account</p>
+                    </div>
+                  </div>
+                  <span className="text-green-800 font-semibold">Verified</span>
                 </li>
-                <li className="flex justify-between">
-                  <span>🏦 Bank of America - Checking Account</span>
-                  <span className="text-green-600 font-medium">Verified</span>
+                <li className="flex justify-between items-center">
+                  <div className="flex items-center gap-3">
+                    <img src="/images/bofa-logo.png" alt="BofA Logo" className="w-10 h-10 rounded-full" />
+                    <div className="whitespace-nowrap">
+                      <p className="text-base font-bold text-gray-900 truncate max-w-[150px]">Bank of America</p>
+                      <p className="text-xs text-gray-500">Checking Account</p>
+                    </div>
+                  </div>
+                  <span className="text-green-800 font-semibold">Verified</span>
                 </li>
               </ul>
               <Link
                 to="/activity"
-                className="mt-4 inline-block text-sm text-indigo-600 font-medium hover:underline"
+                className="mt-6 inline-block text-sm text-indigo-600 font-semibold hover:underline"
               >
                 View all →
               </Link>
             </div>
 
             {/* Investments */}
-            <div className="bg-white p-6 rounded-xl shadow">
-              <h2 className="text-xl font-semibold mb-4">Investments</h2>
-              <ul className="space-y-2 text-sm">
-                <li className="flex justify-between">
-                  <span>🌿 Fidelity - Brokerage Account</span>
-                  <span className="text-green-600 font-medium">Verified</span>
+            <div className="bg-white p-6 rounded-xl shadow h-full flex flex-col">
+              <h2 className="text-xl font-semibold mb-4 text-gray-900">Investments</h2>
+              <ul className="space-y-6 flex-grow">
+                <li className="flex justify-between items-center">
+                  <div className="flex items-center gap-3">
+                    <img src="/images/fidelity-logo.png" alt="Fidelity Logo" className="w-10 h-10 rounded-full" />
+                    <div>
+                      <p className="text-base font-bold text-gray-900">Fidelity</p>
+                      <p className="text-xs text-gray-500">Brokerage Account</p>
+                    </div>
+                  </div>
+                  <span className="text-green-800 font-semibold">Verified</span>
                 </li>
-                <li className="flex justify-between">
-                  <span>🐦 Robinhood - Brokerage Account</span>
-                  <span className="text-green-600 font-medium">Verified</span>
+                <li className="flex justify-between items-center">
+                  <div className="flex items-center gap-3">
+                    <img src="/images/robinhood-logo.png" alt="Robinhood Logo" className="w-10 h-10 rounded-full" />
+                    <div>
+                      <p className="text-base font-bold text-gray-900">Robinhood</p>
+                      <p className="text-xs text-gray-500">Brokerage Account</p>
+                    </div>
+                  </div>
+                  <span className="text-green-800 font-semibold">Verified</span>
                 </li>
               </ul>
               <Link
                 to="/activity"
-                className="mt-4 inline-block text-sm text-indigo-600 font-medium hover:underline"
+                className="mt-6 inline-block text-sm text-indigo-600 font-semibold hover:underline"
               >
                 View all →
               </Link>
             </div>
 
             {/* Loans */}
-            <div className="bg-white p-6 rounded-xl shadow col-span-2 md:col-span-1">
-              <h2 className="text-xl font-semibold mb-4">Loans</h2>
-              <ul className="space-y-2 text-sm">
-                <li>🏡 Chase - Mortgage</li>
-                <li>🎓 SoFi - Student Loan</li>
+            <div className="bg-white p-6 rounded-xl shadow col-span-2 md:col-span-1 flex flex-col h-full">
+              <h2 className="text-xl font-semibold mb-4 text-gray-900">Loans</h2>
+              <ul className="space-y-6 flex-grow">
+                <li className="flex justify-between items-center">
+                  <div className="flex items-center gap-3">
+                    <img src="/images/chase-logo.png" alt="Chase Logo" className="w-10 h-10 rounded-full" />
+                    <div>
+                      <p className="text-base font-bold text-gray-900">Chase</p>
+                      <p className="text-xs text-gray-500">Mortgage</p>
+                    </div>
+                  </div>
+                  <span className="text-green-800 font-semibold">Verified</span>
+                </li>
+                <li className="flex justify-between items-center">
+                  <div className="flex items-center gap-3">
+                    <img src="/images/sofi-logo.png" alt="SoFi Logo" className="w-10 h-10 rounded-full" />
+                    <div>
+                      <p className="text-base font-bold text-gray-900">SoFi</p>
+                      <p className="text-xs text-gray-500">Student Loan</p>
+                    </div>
+                  </div>
+                  <span className="text-green-800 font-semibold">Verified</span>
+                </li>
               </ul>
               <Link
                 to="/activity"
-                className="mt-4 inline-block text-sm text-indigo-600 font-medium hover:underline"
+                className="mt-6 inline-block text-sm text-indigo-600 font-semibold hover:underline"
               >
                 View all →
               </Link>
             </div>
 
             {/* Link Account */}
-            <div className="bg-gradient-to-r from-purple-600 to-indigo-500 p-6 rounded-xl flex flex-col justify-center items-center text-white cursor-pointer"
-                 onClick={() => navigate('/financial-info')}>
+            <div
+              className="bg-gradient-to-r from-purple-600 to-indigo-500 p-6 rounded-xl flex flex-col justify-center items-center text-white cursor-pointer"
+              onClick={() => navigate('/financial-info')}
+            >
               <h2 className="text-xl font-semibold mb-2">Link Account</h2>
               <p className="text-sm">Connect to other financial institutions</p>
             </div>
@@ -94,3 +136,8 @@ export default function Financial() {
     </div>
   );
 }
+
+
+
+
+
