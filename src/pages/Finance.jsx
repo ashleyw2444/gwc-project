@@ -27,7 +27,7 @@ export default function Financial() {
               <ul className="space-y-6 flex-grow">
                 <li className="flex justify-between items-center">
                   <div className="flex items-center gap-3">
-                    <img src="/images/chase-logo.png" alt="Chase Logo" className="w-10 h-10 rounded-full" />
+                    <img src="assets/chase-logo.jpg" alt="Chase Logo" className="w-10 h-10 rounded-full" />
                     <div>
                       <p className="text-base font-bold text-gray-900">Chase</p>
                       <p className="text-xs text-gray-500">Saving Account</p>
@@ -37,7 +37,7 @@ export default function Financial() {
                 </li>
                 <li className="flex justify-between items-center">
                   <div className="flex items-center gap-3">
-                    <img src="/images/bofa-logo.png" alt="BofA Logo" className="w-10 h-10 rounded-full" />
+                    <img src="assets/boa.png" alt="BofA Logo" className="w-10 h-10 rounded-full" />
                     <div className="whitespace-nowrap">
                       <p className="text-base font-bold text-gray-900 truncate max-w-[150px]">Bank of America</p>
                       <p className="text-xs text-gray-500">Checking Account</p>
@@ -60,7 +60,7 @@ export default function Financial() {
               <ul className="space-y-6 flex-grow">
                 <li className="flex justify-between items-center">
                   <div className="flex items-center gap-3">
-                    <img src="/images/fidelity-logo.png" alt="Fidelity Logo" className="w-10 h-10 rounded-full" />
+                    <img src="assets/fid.png" alt="Fidelity Logo" className="w-10 h-10 rounded-full" />
                     <div>
                       <p className="text-base font-bold text-gray-900">Fidelity</p>
                       <p className="text-xs text-gray-500">Brokerage Account</p>
@@ -70,7 +70,7 @@ export default function Financial() {
                 </li>
                 <li className="flex justify-between items-center">
                   <div className="flex items-center gap-3">
-                    <img src="/images/robinhood-logo.png" alt="Robinhood Logo" className="w-10 h-10 rounded-full" />
+                    <img src="assets/rob.png" alt="Robinhood Logo" className="w-10 h-10 rounded-full" />
                     <div>
                       <p className="text-base font-bold text-gray-900">Robinhood</p>
                       <p className="text-xs text-gray-500">Brokerage Account</p>
@@ -93,7 +93,7 @@ export default function Financial() {
               <ul className="space-y-6 flex-grow">
                 <li className="flex justify-between items-center">
                   <div className="flex items-center gap-3">
-                    <img src="/images/chase-logo.png" alt="Chase Logo" className="w-10 h-10 rounded-full" />
+                    <img src="assets/chase-logo.jpg" alt="Chase Logo" className="w-10 h-10 rounded-full" />
                     <div>
                       <p className="text-base font-bold text-gray-900">Chase</p>
                       <p className="text-xs text-gray-500">Mortgage</p>
@@ -103,7 +103,7 @@ export default function Financial() {
                 </li>
                 <li className="flex justify-between items-center">
                   <div className="flex items-center gap-3">
-                    <img src="/images/sofi-logo.png" alt="SoFi Logo" className="w-10 h-10 rounded-full" />
+                    <img src="assets/sofi.jpg" alt="SoFi Logo" className="w-10 h-10 rounded-full" />
                     <div>
                       <p className="text-base font-bold text-gray-900">SoFi</p>
                       <p className="text-xs text-gray-500">Student Loan</p>
