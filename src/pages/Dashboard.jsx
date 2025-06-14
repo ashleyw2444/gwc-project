@@ -16,7 +16,7 @@ export default function Dashboard() {
       {/* Main Content */}
       <main className="flex-1 p-10">
         <div className="mb-8">
-          <h2 className="text-lg text-gray-600 mb-1">Hi &lt;USER&gt;,</h2>
+          <h2 className="text-lg text-gray-600 mb-1">Hi John Smith,</h2>
           <h1 className="text-3xl font-bold text-gray-900">Welcome to CLEAR!</h1>
         </div>
 
