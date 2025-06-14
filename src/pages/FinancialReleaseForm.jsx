@@ -9,7 +9,7 @@ export default function FinancialReleaseForm() {
         <div className="max-w-3xl mx-auto space-y-8">
           {/* Title and description */}
           <div>
-            <h1 className="text-3xl font-bold text-gray-900">Medical Release Form</h1>
+            <h1 className="text-3xl font-bold text-gray-900">Financial Release Form</h1>
             <p className="mt-4 text-gray-700 text-lg">
             I, John Doe authorize CLEAR to release confidential information about me. You may release a copy of my financial records, or summary or narrative of my protected financial information to City Bank.
             </p>
