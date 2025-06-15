@@ -1,9 +1,9 @@
-import { useNavigate } from 'react-router-dom'; // ← Add this!
+import { useNavigate } from 'react-router-dom';
 import Sidebar from '../components/Sidebar';
 import TrackerPanel from "../components/TrackerPanel";
 
 export default function Healthcare() {
-  const navigate = useNavigate(); // ← Initialize the hook
+  const navigate = useNavigate(); 
 
   const healthcareItems = [
     { label: "🏥 Hospital 1", date: "22 September 2020" },
